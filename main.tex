@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[ngerman, english]{babel}
-\usepackage{xcookybooky}
+\usepackage{xcookybooky}[nowarnings]
 \usepackage{units}
 \usepackage{rotating}
 \usepackage{lmodern}
@@ -13,9 +13,34 @@
 {%  fuer den Fall das ngerman geladen wurde
     inghead = Zutaten,
     prephead = Zubereitung,
-    hinthead = Tipp,
+    hinthead = Tipps,
     portionvalue = Portionen,
 }
+
+\usepackage{hyperref}    % must be the last package
+\hypersetup{%
+    pdfauthor            = {Christian Weissmann},
+    pdftitle             = {Daheim-Rezepte},
+    pdfsubject           = {Rezepte},
+    pdfkeywords          = {Rezepte},
+    pdfstartview         = {FitV},
+    pdfview              = {FitH},
+    pdfpagemode          = {UseNone}, % Options; UseNone, UseOutlines
+    bookmarksopen        = {true},
+    pdfpagetransition    = {Glitter},
+    colorlinks           = {true},
+    linkcolor            = {black},
+    urlcolor             = {blue},
+    citecolor            = {black},
+    filecolor            = {black},
+}
+
+\hbadness=10000	% Ignore underfull boxes
+
+
+
+
 \begin{document}
     \include{receipes/hummus.tex}
+    \include{receipes/gemuesesuppe.tex}
 \end{document}
