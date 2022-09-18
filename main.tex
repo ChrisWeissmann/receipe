@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman, english]{babel}
+\usepackage{xcookybooky}
+\usepackage{units}
+\usepackage{rotating}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\setHeadlines
+{%  fuer den Fall das ngerman geladen wurde
+    inghead = Zutaten,
+    prephead = Zubereitung,
+    hinthead = Tipp,
+    portionvalue = Portionen,
+}
+\begin{document}
+    \include{receipes/hummus.tex}
+\end{document}
