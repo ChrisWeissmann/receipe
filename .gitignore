@@ -313,3 +313,4 @@ TSWLatexianTemp*
 # Built Visual Studio Code Extensions
 *.vsix
 Receipe.code-workspace
+.DS_Store
