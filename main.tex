@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[a4paper, 11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[ngerman, english]{babel}
@@ -15,6 +15,8 @@
     prephead = Zubereitung,
     hinthead = Tipps,
     portionvalue = Portionen,
+    continuationhead = Fortsetzung,
+    continuationfoot = Fortsetzung auf nächster Seite,
 }
 
 \usepackage{hyperref}    % must be the last package
@@ -41,7 +43,9 @@
 
 
 \begin{document}
-    \include{receipes/hummus.tex}
-    \include{receipes/gemuesesuppe.tex}
-    \include{receipes/quinoapfanne.tex}
+    \include{receipes/hummus/hummus.tex}
+    \include{receipes/gemuesesuppe/gemuesesuppe.tex}
+    \include{receipes/quinoapfanne/quinoapfanne.tex}
+    \include{receipes/waffeln-1/waffeln-1.tex}
+    % \include{receipes/template/rezept.tex}
 \end{document}
